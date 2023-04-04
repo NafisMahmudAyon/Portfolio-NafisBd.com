@@ -1,0 +1,66 @@
+import React, {useRef} from 'react'
+import { motion, useScroll } from 'framer-motion'
+
+const Details = ({ position, company, companyLink, time, address, work}) => {
+    return (
+        <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+            <div>
+                <h3 className=' capitalize font-bold text-2xl'>{position}&nbsp;<a href={companyLink} target='_blank' className='text-primary capitalize'>@{company}</a></h3>
+                <span className=' capitalize font-medium text-dark/75'>
+                    {time} | {address}
+                </span>
+                <p className='font-medium w-full'>
+                    {work}
+                </p>
+            </div>
+        </li>
+    )
+}
+
+const Experience = () => {
+    const ref = useRef(null);
+    const {scrollYProgress} = useScroll(
+        {
+            target: ref,
+            offset: ['start end', 'center start']
+        }
+    )
+  return (
+    <div className='my-64'>
+        <h2 className='font-bold text-8xl mb-32 w-full text-center'>
+            Experience
+        </h2>
+        <div ref={ref} className='w-[75%] mx-auto relative'>
+            <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-8 top-0 w-[4px] h-full bg-dark origin-top'  />
+            <ul className='w-full flex flex-col items-start justify-between ml-4'>
+                <Details 
+                    position ="Frontend Developer"
+                    company ="PickPlugins"
+                    companyLink ="www.pickplugins.com"
+                    time = "2022-Present"
+                    address = "Rangpur, Bangladesh"
+                    work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
+                />
+                <Details 
+                    position ="Frontend Developer"
+                    company ="PickPlugins"
+                    companyLink ="www.pickplugins.com"
+                    time = "2022-Present"
+                    address = "Rangpur, Bangladesh"
+                    work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
+                />
+                <Details 
+                    position ="Frontend Developer"
+                    company ="PickPlugins"
+                    companyLink ="www.pickplugins.com"
+                    time = "2022-Present"
+                    address = "Rangpur, Bangladesh"
+                    work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
+                />
+            </ul>
+        </div>
+    </div>
+  )
+}
+
+export default Experience
