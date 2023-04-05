@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 const FramerImage = motion(Image);
 
-const Article = ({img, title, date, link}) => {
+const Articles = ({img, title, date, link}) => {
   return(
     <li className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4'>
       <Link href={link}>
@@ -70,25 +70,25 @@ const articles = () => {
             </ul>
             <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 '>All Articles</h2>
           </Layout>
-          <Article 
+          <Articles 
             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
             date="March 22, 2023"
             link="/"
             img={Article1}
           />
-          <Article 
+          <Articles 
             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
             date="March 22, 2023"
             link="/"
             img={Article1}
           />
-          <Article 
+          <Articles 
             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
             date="March 22, 2023"
             link="/"
             img={Article1}
           />
-          <Article 
+          <Articles 
             title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
             date="March 22, 2023"
             link="/"
