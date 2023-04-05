@@ -29,7 +29,7 @@ const Experience = () => {
     const {scrollYProgress} = useScroll(
         {
             target: ref,
-            offset: ['start end', 'center start']
+            offset: ['start end', 'center start'] 
         }
     )
   return (
