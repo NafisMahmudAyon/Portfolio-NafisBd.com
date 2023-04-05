@@ -7,6 +7,8 @@ import ProfilePic from '../../public/images/profilePic.png'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '../components/Experience'
+import Education from '../components/Education'
+import ContactMe from '@/components/ContactMe'
 
 
 
@@ -90,6 +92,8 @@ const about = () => {
                 </div>
                 <Skills />
                 <Experience />
+                <Education />
+                <ContactMe />
             </Layout>
         </main>
     </>
