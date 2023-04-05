@@ -10,9 +10,21 @@ import { motion } from 'framer-motion'
 
 const FramerImage = motion(Image);
 
+const Article = ({img, title, date, link}) => {
+  return(
+    <li className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4'>
+      <Link href={link}>
+        <h2>{title}</h2>
+      </Link>
+      <span>{date}</span>
+    </li>
+  )
+}
+
 const FeaturedArticle =({img, title, time, summary, link}) => {
   return (
-    <li className=' col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+    <li className=' col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative'>
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark" />
       <Link href={link} target='_blank' className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'>
         <FramerImage src={img} alt={title} className='w-full h-auto' 
           whileHover={{ scale: 1.05 }}
@@ -20,7 +32,7 @@ const FeaturedArticle =({img, title, time, summary, link}) => {
         />
       </Link>
       <Link href={link} target='_blank'>
-        <h2 className='capitalize text-2xl font-bold my-2 hover:underline'>{title}</h2>
+        <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline'>{title}</h2>
       </Link>
       <p className=' text-sm mb-2'>{summary}</p>
       <span className='text-primary font-semibold'>{time}</span>
@@ -55,16 +67,34 @@ const articles = () => {
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
                 link="/"
               />
-              <FeaturedArticle
-                img={Article1}
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                time="9 min read"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                link="/"
-              />
             </ul>
+            <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32 '>All Articles</h2>
           </Layout>
+          <Article 
+            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+            date="March 22, 2023"
+            link="/"
+            img={Article1}
+          />
+          <Article 
+            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+            date="March 22, 2023"
+            link="/"
+            img={Article1}
+          />
+          <Article 
+            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+            date="March 22, 2023"
+            link="/"
+            img={Article1}
+          />
+          <Article 
+            title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+            date="March 22, 2023"
+            link="/"
+            img={Article1}
+          />
+
         </main>
     </>
   )
