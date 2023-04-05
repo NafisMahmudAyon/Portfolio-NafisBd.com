@@ -14,7 +14,7 @@ const useThemeSwitcher = () => {
             if(userPref) {
                 let check = userPref === "dark" ? "dark" : "light";
                 setMode(check);
-                if(check==="daark"){
+                if(check==="dark"){
                     document.documentElement.classList.add("dark")
                 }else{
                     document.documentElement.classList.remove("dark")
