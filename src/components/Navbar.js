@@ -33,12 +33,12 @@ const Navbar = () => {
         </nav>
         
         <nav className='flex items-center justify-center flex-wrap'>
-            <motion.a href="https://www.facebook.com/nafismahmud0/" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mr-3'><FacebookIcon /></motion.a>
-            <motion.a href="https://github.com/NafisMahmudAyon" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3'><GithubIcon /></motion.a>
-            <motion.a href="https://www.linkedin.com/in/nafis-mahmud-ayon-760b45190/" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3'><LinkedInIcon /></motion.a>
-            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3'><WhatsAppIcon /></motion.a>
-            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3'><TelegramIcon /></motion.a>
-            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 ml-3'><GmailIcon /></motion.a>
+            <motion.a href="https://www.facebook.com/nafismahmud0/" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mr-3 dark:fill-light'><FacebookIcon /></motion.a>
+            <motion.a href="https://github.com/NafisMahmudAyon" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3 dark:fill-light'><GithubIcon /></motion.a>
+            <motion.a href="https://www.linkedin.com/in/nafis-mahmud-ayon-760b45190/" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3 dark:fill-light'><LinkedInIcon /></motion.a>
+            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3 dark:fill-light'><WhatsAppIcon /></motion.a>
+            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 mx-3 dark:fill-light'><TelegramIcon /></motion.a>
+            <motion.a href="mailto:nafismahmudayon@gmail.com" target={"_blank"} whileHover={{ y:-2 }} whileTap={{ scale:0.9 }} className='w-6 ml-3 dark:fill-light'><GmailIcon /></motion.a>
             <button
                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
