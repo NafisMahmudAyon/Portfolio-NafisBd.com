@@ -9,6 +9,7 @@ import Skills from '@/components/Skills'
 import Experience from '../components/Experience'
 import Education from '../components/Education'
 import ContactMe from '@/components/ContactMe'
+import Transition from '@/components/Transition'
 
 
 
@@ -49,6 +50,7 @@ const about = () => {
             <title>NafisBD | About Me</title>
             <meta name="description" content="NafisBd.com is a protfolio website which created by Nafis Mahmud Ayon" />
         </Head>
+        <Transition />
         <main className='flex flex-col w-full items-center justify-center dark:text-light'>
             <Layout className="pt-16">
                 <AnimatedText text="Passion Fuels Purpose!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8  ' />
