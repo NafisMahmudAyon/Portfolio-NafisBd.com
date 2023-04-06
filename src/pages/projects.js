@@ -120,7 +120,7 @@ const projects = () => {
                 github='/'
               />
             </div>
-            <div className=' col-span-6'>
+            <div className=' col-span-6 sm:col-span-12'>
               <Project 
                 title="Crypto Screener Application"
                 img={project1}
@@ -129,7 +129,7 @@ const projects = () => {
                 github='/'
               />
             </div>
-            <div className=' col-span-6'>
+            <div className=' col-span-6 sm:col-span-12'>
               <Project 
                 title="Crypto Screener Application"
                 img={project1}

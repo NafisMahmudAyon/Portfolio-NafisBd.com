@@ -103,7 +103,7 @@ const articles = () => {
                 link="/"
               />
               <FeaturedArticle
-                img={Article}
+                img={Article1}
                 title="Build A Custom Pagination Component In Reactjs From Scratch"
                 time="9 min read"
                 summary="Learn how to build a custom pagination component in ReactJS from scratch. 
