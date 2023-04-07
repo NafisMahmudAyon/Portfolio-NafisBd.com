@@ -49,16 +49,10 @@ const Education = () => {
                     info = "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
                 />
                 <Details 
-                    type ="Bachelor Of Science In Computer Science & Engineering"
-                    time = "2016-2020"
-                    place = "Ahsanullah Institute of Information and Communication Technology (AIICT)"
-                    info = "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-                />
-                <Details 
-                    type ="Bachelor Of Science In Computer Science & Engineering"
-                    time = "2016-2020"
-                    place = "Ahsanullah Institute of Information and Communication Technology (AIICT)"
-                    info = "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+                    type ="Online Coursework"
+                    time = "2017-2022"
+                    place = "Coursera And Udemy"
+                    info = "Completed coursework in advanced topics such as HTML, CSS, JS, React JS, Next JS, Sass, etc."
                 />
             </ul>
         </div>

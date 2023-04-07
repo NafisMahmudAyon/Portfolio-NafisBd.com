@@ -48,26 +48,18 @@ const Experience = () => {
                 <Details 
                     position ="Frontend Developer"
                     company ="PickPlugins"
-                    companyLink ="www.pickplugins.com"
+                    companyLink ="https://www.pickplugins.com"
                     time = "2022-Present"
                     address = "Rangpur, Bangladesh"
                     work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
                 />
                 <Details 
                     position ="Frontend Developer"
-                    company ="PickPlugins"
-                    companyLink ="www.pickplugins.com"
-                    time = "2022-Present"
-                    address = "Rangpur, Bangladesh"
-                    work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
-                />
-                <Details 
-                    position ="Frontend Developer"
-                    company ="PickPlugins"
-                    companyLink ="www.pickplugins.com"
-                    time = "2022-Present"
-                    address = "Rangpur, Bangladesh"
-                    work = "I was responsible for designing and maintaining of visually attractive user interfaces for websites and applications as a frontend developer. I worked with designers, assured the website was compatible across browsers, and enhanced its performance. To produce high-quality code that satisfied business objectives, I matched frontend functionality with backend infrastructure, tested and debugged to ensure user-friendliness, and kept up with emerging trends."
+                    company ="Fiverr"
+                    companyLink ="https://www.fiverr.com"
+                    time = "2020-Present"
+                    address = "Freelance "
+                    work = "I design and maintain visually attractive user interfaces for websites and applications as a freelance frontend developer. To meet my clients' business objectives, I align frontend functionality with backend infrastructure, test and debug the code for optimal user-friendliness, and stay up-to-date with emerging trends in the field to deliver high-quality results."
                 />
             </ul>
         </div>
