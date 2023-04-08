@@ -5,7 +5,12 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import ramadan from "../../public/projects/ramadan.png"
+import aiImage from "../../public/projects/AIimageGallery.png"
+import jokeGenerate from "../../public/projects/jokegenerator.png"
+import EnglishDictionary from "../../public/projects/EnglishDictionary.png"
+import QRCodeGenerator from "../../public/projects/QRCodeGenerator.png"
+import QuoteGenerator from "../../public/projects/QuoteGenerator.png"
 import { motion } from 'framer-motion'
 import Transition from '@/components/Transition'
 
@@ -80,62 +85,58 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=' col-span-12'>
               <FeaturedProject 
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link='/'
+                title="Ramadan Calendar 2023"
+                img={ramadan}
+                summary="A mobile or web-based tool called a Ramadan calendar offers users a thorough overview of the Islamic holy month of Ramadan. It typically has a calendar showing the precise dates of the month and the times for Iftar and Sheri on each day."
+                link='https://ramadan-2023-nafisbd.netlify.app/'
                 type="Featured Project"
-                github='/'
+                github='https://github.com/NafisMahmudAyon/ramadan-schedule'
               />
             </div>
             <div className=' col-span-6 sm:col-span-12'>
               <Project 
-                title="Crypto Screener Application"
-                img={project1}
-                link='/'
-                type="Featured Project"
-                github='/'
+                title="Joke Generator App"
+                img={jokeGenerate}
+                link='https://joke-generator-nafisbd.netlify.app/'
+                type="Website"
+                github='https://github.com/NafisMahmudAyon/Joke-Generator'
               />
             </div>
             <div className=' col-span-6 sm:col-span-12'>
               <Project 
-                title="Crypto Screener Application"
-                img={project1}
-                link='/'
-                type="Featured Project"
-                github='/'
+                title="English Dictionary"
+                img={EnglishDictionary}
+                link='https://english-dictionary-nafisbd.netlify.app/'
+                type="Website"
+                github='https://github.com/NafisMahmudAyon/English-Dictionary'
               />
             </div>
             <div className=' col-span-12'>
               <FeaturedProject 
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link='/'
+                title="AI Image Gallery"
+                img={aiImage}
+                summary="An AI image gallery application is a software program that utilizes artificial intelligence algorithms to manage and display collections of digital images."
+                link='https://ai-image-gallery-nafisbd.netlify.app'
                 type="Featured Project"
-                github='/'
+                github='https://github.com/NafisMahmudAyon/image-gallery'
               />
             </div>
             <div className=' col-span-6 sm:col-span-12'>
               <Project 
-                title="Crypto Screener Application"
-                img={project1}
-                link='/'
-                type="Featured Project"
-                github='/'
+                title="QR Code Generator"
+                img={QRCodeGenerator}
+                link='https://qr-code-generator-nafisbd.netlify.app/'
+                type="Website"
+                github='https://github.com/NafisMahmudAyon/QR-Code-Generator-HTML-CSS-JS'
               />
             </div>
             <div className=' col-span-6 sm:col-span-12'>
               <Project 
-                title="Crypto Screener Application"
-                img={project1}
-                link='/'
-                type="Featured Project"
-                github='/'
+                title="Quote Generator"
+                img={QuoteGenerator}
+                link='https://quote-generator-nafisbd.netlify.app/'
+                type="Website"
+                github='https://github.com/NafisMahmudAyon/Quote-Generator'
               />
             </div>
           </div>
