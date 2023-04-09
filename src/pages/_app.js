@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://nafisbd.com/logo.png" />
       </Head>
       <main className="font-['Montserrat'] bg-light dark:bg-dark w-full min-h-screen">
         <Navbar />
