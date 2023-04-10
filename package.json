@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://nafisbd.com",
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build && next export",
-    "export": "next export",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -16,7 +16,7 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
-    "next": "13.2.4",
+    "next": "^13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.32.0"
