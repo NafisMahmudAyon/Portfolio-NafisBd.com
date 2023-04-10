@@ -6,6 +6,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
+import Resume from '/Nafis-Mahmud-Ayon-01733235762.pdf'
 import ExpertIcon from '@/components/ExpertIcon'
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import Transition from '@/components/Transition'
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>NafisBD | Frontend Developer & UI/UX Designer</title>
         <meta name="description" content="NafisBD.com is a Portfolio site of a web developer named 'Nafis Mahmud Ayon'. " />
       </Head>
       <Transition />
@@ -39,7 +40,7 @@ export default function Home() {
                 <ExpertIcon />
               </div>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                <Link href="/dummy.pdf" target={"_blank"}
+                <Link href={Resume} target={"_blank"}
                 className="flex items-center bg-dark text-light py-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light hover:text-dark border-2 border-solid border-transparent hover:border-dark md:p-2 md:px-4 md:text-base " download={true}
                 >Resume <LinkArrow className={"w-6 ml-1"} /></Link>
                 <Link href="mailto:nafismahmudayon@gmail.com" target={"_blank"}
