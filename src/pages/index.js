@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NafisBD | Frontend Developer & UI/UX Designer</title>
+        <title>NafisBD | Frontend Developer & UI/UX Designer | Nafis Mahmud Ayon</title>
         <meta name="description" content="NafisBD.com is a Portfolio site of a web developer named 'Nafis Mahmud Ayon'. " />
       </Head>
       <Transition />
